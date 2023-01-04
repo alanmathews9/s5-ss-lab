@@ -20,7 +20,6 @@ int main(){
             case 1:{
                 printf("Enter the name of the file: ");
                 dir.fcount++;
-                int x=dir.fcount;
                 scanf("%s",dir.fname[dir.fcount]);
                 break;
             }
@@ -63,7 +62,7 @@ int main(){
                 break;
             }
             case 4:{
-                if(dir.fcount==0){
+                if(dir.fcount==-1){
                     printf("empty..");
                 }
                 else{
