@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 #include<stdlib.h>
 void main()
 {
@@ -22,6 +21,7 @@ goto x;
 y: count=0;
 for(i=0;i<n;i++)
 {
+printf("enter block number: ");
 scanf("%d", &index[i]);
 if(f[index[i]]==0)
 count++;
@@ -38,7 +38,7 @@ printf("%d-------->%d : %d\n",ind,index[k],f[index[k]]);
 else
 {
 printf("File in the index is already allocated \n");
-printf("Enter another file indexed");
+printf("Enter another file indexed\n");
 goto y;
 }
 printf("Do you want to enter more file(Yes - 1/No - 0)");
