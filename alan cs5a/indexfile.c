@@ -10,6 +10,7 @@ x:printf("Enter the index block: ");
 scanf("%d",&ind);
 if(f[ind]!=1)
 {
+f[ind]=1;
 printf("Enter no of blocks needed and no of files for the index %d on the disk : \n", ind);
 scanf("%d",&n);
 }
