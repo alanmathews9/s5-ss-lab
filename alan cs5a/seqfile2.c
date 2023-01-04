@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 
 void main()
@@ -19,14 +18,14 @@ for(j=st;j<(st+len);j++)
 if(f[j]==0)
 {
 f[j]=1;
-printf("%d\t%d\n",j,f[j]);
+printf("%d---->%d\n",j,f[j]);
 }
 if(j!=(st+len-1))
 printf("File is allocated\n");
 }
 
 else
-printf("File is not allocated");
+printf("File is not allocated\n");
 
 printf("Do you want to allocate more?(Yes-1 no-0)");
 scanf("%d",&c);
