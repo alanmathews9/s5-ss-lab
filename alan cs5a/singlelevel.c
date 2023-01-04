@@ -14,7 +14,7 @@ int main(){
     int state=0;
     int ch;
     while(state==0){
-        printf("1. Create File 2. Search 3. Delete 4.display 5.Exit");
+        printf("1. Create File 2. Search 3. Delete 4.display 5.Exit : ");
         scanf("%d",&ch);
         switch(ch){
             case 1:{
@@ -28,19 +28,19 @@ int main(){
                 char target_file[20];
                 scanf("%s",target_file);
                 if(dir.fcount==-1){
-                    printf("Empty...");
+                    printf("Empty...\n");
                     break;
                 }
                 int found=0;
                 for(int i=0;i<=dir.fcount;i++){
                     if(strcmp(dir.fname[i],target_file)==0){
-                        printf("File Found..");
+                        printf("File Found..\n");
                         found=1;
                         break;
                     }
                 }
                 if(found==0){
-                    printf("Not FOund");
+                    printf("Not Found\n");
                 }
                 break;
             }
@@ -57,17 +57,17 @@ int main(){
                     }
                 }
                 if(found==0){
-                    printf("File not found..");
+                    printf("File not found..\n");
                 }
                 break;
             }
             case 4:{
                 if(dir.fcount==-1){
-                    printf("empty..");
+                    printf("empty..\n");
                 }
                 else{
                      for(int i=0;i<=dir.fcount;i++){
-                        printf("\nFile name: %s",dir.fname[i]);
+                        printf("\nFile name: %s\n",dir.fname[i]);
                      }
                 }
                break;
