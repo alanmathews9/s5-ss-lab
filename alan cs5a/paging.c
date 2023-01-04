@@ -23,10 +23,10 @@ break;
 }
 rempages = rempages - s[i];
 printf("\nEnter pagetable for p[%d] --- ",i);
-for(j=1;j<s[i]+1;j++)
+for(j=1;j<s[i]+1;j++){
 scanf("%d",&fno[i][j]);
 }
-printf("\nEnter Logical Address to find Physical Address ");
+}
 printf("\nEnter process no. and pagenumber and offset -- ");
 scanf("%d %d %d",&x,&y, &offset);
 if(x>np || y>=s[i] || offset>=ps){
