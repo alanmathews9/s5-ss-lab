@@ -34,12 +34,4 @@ if(c==1)
 goto x;
 else
 return;
-
-
-
-
-
-
 }
-
-
