@@ -11,7 +11,7 @@ int main(){
     int state=0;
     int dcount=0;
     while(state==0){
-        printf("1. Create directory 2. create file 3. serch file 4. delete file 5. Exit: ");
+        printf("1. Create directory 2. create file 3. search file 4. delete file 5. Exit: ");
         int ch;
         scanf("%d",&ch);
         switch(ch){
