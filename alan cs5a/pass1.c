@@ -1,4 +1,4 @@
-// Program to implement Pass 1 of a Two Pass Assembler
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
